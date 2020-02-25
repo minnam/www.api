@@ -6,7 +6,8 @@
                     "tsconfig": {
                         "compilerOptions": {
                             "target": "ES5",
-                            "module": "CommonJS"
+                            "module": "CommonJS",
+                            "lib": [ "es2015", "dom" ]
                         }
                     }
                 }
@@ -44,6 +45,12 @@
             "peerDependencies": {
                 "@types/node": "^13.7.0",
                 "fastify": "^2.11.0"
+            },
+            "propagate": true
+        },
+        "logs/*": {
+            "peerDependencies": {
+                "axios": "^0.19.2"
             },
             "propagate": true
         }
